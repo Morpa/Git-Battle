@@ -32,7 +32,7 @@ export default {
     dark: '#0A1014',
     grey: '#1B2329',
     midGrey: '#353F4C',
-    lightGrey: '#7A8C99',
+    lightGrey: '#EAEAEA',
     white: '#FFF'
   },
 
@@ -44,6 +44,13 @@ export default {
     large: '4.0rem',
     xlarge: '4.8rem',
     xxlarge: '5.6rem'
+  },
+  layers: {
+    base: 10,
+    menu: 20,
+    overlay: 30,
+    modal: 40,
+    alwaysOnTop: 50
   },
   transition: {
     default: '0.3s ease-in-out',

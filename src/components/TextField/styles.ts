@@ -21,7 +21,7 @@ const wrapperModifiers = {
   `,
   loading: (theme: DefaultTheme) => css`
     ${InputWrapper} {
-      border-color: ${theme.colors.primary};
+      border-color: ${theme.colors.midGrey};
     }
   `,
   disabled: (theme: DefaultTheme) => css`
@@ -29,7 +29,7 @@ const wrapperModifiers = {
     ${Input},
     ${Icon} {
       cursor: not-allowed;
-      color: ${theme.colors.gray};
+      color: ${theme.colors.lightGrey};
 
       &::placeholder {
         color: currentColor;
@@ -41,21 +41,21 @@ const wrapperModifiers = {
 export const InputWrapper = styled.div`
   ${({ theme }) => css`
     display: flex;
-    background: ${theme.colors.lightGray};
+    background: ${theme.colors.lightGrey};
     border-radius: 0.2rem;
     padding: 0 ${theme.spacings.xsmall};
     border: 0.2rem solid;
-    border-color: ${theme.colors.lightGray};
+    border-color: ${theme.colors.lightGrey};
 
     &:focus-within {
-      box-shadow: 0 0 0.5rem ${theme.colors.primary};
+      box-shadow: 0 0 0.5rem ${theme.colors.midGrey};
     }
   `}
 `
 
 export const Input = styled.input<IconPositionProps>`
   ${({ theme, iconPosition }) => css`
-    color: ${theme.colors.black};
+    color: ${theme.colors.dark};
     font-family: ${theme.font.family};
     font-size: ${theme.font.sizes.medium};
     padding: ${theme.spacings.xxsmall} 0;
@@ -70,7 +70,7 @@ export const Input = styled.input<IconPositionProps>`
 export const Label = styled.label`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
-    color: ${theme.colors.black};
+    color: ${theme.colors.dark};
     cursor: pointer;
   `}
 `
@@ -79,7 +79,7 @@ export const Icon = styled.div<IconPositionProps>`
   ${({ theme, iconPosition }) => css`
     display: flex;
     width: 2.2rem;
-    color: ${theme.colors.gray};
+    color: ${theme.colors.grey};
     order: ${iconPosition === 'right' ? 1 : 0};
 
     & > svg {
@@ -107,15 +107,15 @@ export const Loading = styled.span`
   ${({ theme }) => css`
     position: relative;
     padding-left: 2rem;
-    color: ${theme.colors.primary};
+    color: ${theme.colors.yellow};
     font-size: ${theme.font.sizes.xsmall};
     &::before {
       content: '';
       top: 0;
       left: 0;
       position: absolute;
-      border: 0.2rem solid ${theme.colors.lightGray};
-      border-left-color: ${theme.colors.primary};
+      border: 0.2rem solid ${theme.colors.lightGrey};
+      border-left-color: ${theme.colors.midGrey};
       border-radius: 50%;
       width: ${theme.font.sizes.small};
       height: ${theme.font.sizes.small};

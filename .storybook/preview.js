@@ -7,7 +7,7 @@ import theme from 'styles/theme'
 
 export const parameters = {
   backgrounds: {
-    default: 'w-dark',
+    default: 'w-light',
     values: [
       {
         name: 'w-light',
