@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlayerPreview /> should render correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4rem;
+  max-width: 50rem;
+}
+
+.c1 {
+  width: 15rem;
+  border-radius: 50%;
+}
+
+<div
+  class="c0"
+>
+  <img
+    alt="Avatar for Morpa"
+    class="c1"
+    src="https://avatars2.githubusercontent.com/u/15898709?s=460&u=86fabb155a6cbb5dc2be016ce890a81e583fdd10&v=4"
+  />
+  <h2>
+    @Morpa
+  </h2>
+</div>
+`
