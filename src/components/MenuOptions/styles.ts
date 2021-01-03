@@ -2,7 +2,7 @@ import styled, { css, DefaultTheme } from 'styled-components'
 
 const linkModifiers = {
   default: (theme: DefaultTheme) => css`
-    color: ${theme.colors.dark};
+    color: ${theme.colors.white};
   `,
   active: (theme: DefaultTheme) => css`
     color: ${theme.colors.yellow};

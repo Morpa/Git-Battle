@@ -1,9 +1,9 @@
 import Base from 'templates/Base'
 
-export default function Home() {
+export default function Popular() {
   return (
     <Base>
-      <h1>Home</h1>
+      <h1>Popular</h1>
     </Base>
   )
 }
