@@ -13,17 +13,18 @@ const wrapperModifiers = {
     ${InputWrapper} {
       border-color: ${theme.colors.red};
     }
-
     ${Icon},
     ${Label} {
       color: ${theme.colors.red};
     }
   `,
+
   loading: (theme: DefaultTheme) => css`
     ${InputWrapper} {
       border-color: ${theme.colors.midGrey};
     }
   `,
+
   disabled: (theme: DefaultTheme) => css`
     ${Label},
     ${Input},
@@ -31,7 +32,7 @@ const wrapperModifiers = {
       cursor: not-allowed;
       color: ${theme.colors.lightGrey};
 
-      &::placeholder {
+      &:placeholder {
         color: currentColor;
       }
     }
@@ -109,7 +110,8 @@ export const Loading = styled.span`
     padding-left: 2rem;
     color: ${theme.colors.yellow};
     font-size: ${theme.font.sizes.xsmall};
-    &::before {
+
+    &:before {
       content: '';
       top: 0;
       left: 0;
